@@ -44,7 +44,9 @@ const {
           icon,
           callToAction,
           classes: itemClasses = {},
+          url,
         }) => (
+        <a href={url} target="_blank" rel="noopener noreferrer">
           <div
             class={twMerge(
               "relative flex flex-col",
@@ -62,15 +64,15 @@ const {
                 )}
               />
             )}
-            <div
-              class={twMerge(
-                "text-xl font-bold",
-                titleClass,
-                itemClasses?.title
-              )}
-            >
-              {title}
-            </div>
+              <div
+                class={twMerge(
+                  "text-xl font-bold",
+                  titleClass,
+                  itemClasses?.title
+                )}
+              >
+                {title}
+              </div>
             {description && (
               <p
                 class={twMerge(
@@ -87,6 +89,7 @@ const {
               </div>
             )}
           </div>
+        </a>
         )
       )}
     </div>

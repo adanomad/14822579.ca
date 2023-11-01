@@ -5,28 +5,39 @@ import Layout from '~/layouts/PageLayout.astro';
 const metadata = {
   title: '14822579 Canada Corp.',
 };
+
+const items = [
+  {
+    title: 'AdaNomad',
+    description:
+      'Vibrant consulting from experts collaborate to provide valuable insights and solutions to businesses.',
+    icon: 'tabler:users',
+    url: 'https://adanomad.com',
+  },
+  {
+    title: 'AskRemotely',
+    description:
+      'A private AI platform for businesses, research, and academia to interact with documents using natural language. Ask questions, get answers, and speed up discoveries.',
+    icon: 'tabler:message',
+    url: 'https://askremotely.com',
+  },
+  {
+    title: 'BJJ Ace',
+    description:
+      'Improve your Jiujitsu using AI! Get AI-guided feedback on your techniques and access expert tutorials from professionals.',
+    icon: 'tabler:stretching',
+    url: 'https://bjjace.com',
+  },
+];
 ---
 
 <Layout metadata={metadata}>
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="14822579 Canada Corp."
+    title="Our Products"
     subtitle="Empowering businesses with technology to improve efficiency and productivity."
-    columns={2}
-    items={[
-      {
-        title: 'AdaNomad Consulting Community',
-        description:
-          'AdaNomad builds a vibrant consulting community where experts collaborate to provide valuable insights and solutions to businesses. Join our community and gain access to a network of industry professionals.',
-        icon: 'tabler:users',
-      },
-      {
-        title: 'AskRemotely Chatbot for Data',
-        description:
-          'AskRemotely revolutionizes data interaction with its AI-powered chatbot. Communicate with your data effortlessly using state-of-the-art language models. Unlock the potential of your data with AskRemotely.',
-        icon: 'tabler:message',
-      },
-    ]}
+    columns={3}
+    items={items}
   />
 </Layout>
