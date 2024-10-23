@@ -161,7 +161,7 @@ export const footerData = {
     //   title: 'Company',
     //   links: [
     //     { text: 'Adanomad', href: 'https://adanomad.com' },
-    //     { text: 'AskRemotely', href: 'https://askremotely.com' },
+    //     { text: 'AceTeam', href: 'https://aceteam.ai' },
     //     { text: 'BJJ Ace', href: 'https://bjjace.com' },
     // { text: 'About', href: '#' },
     // { text: 'Blog', href: '#' },
